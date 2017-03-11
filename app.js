@@ -30,8 +30,8 @@ var source = Many([
 
 S(
     source,
-    S.through(console.log.bind(console, 'event')),
     todosModel.effects(),
+    S.through(console.log.bind(console, 'event')),
     todosModel.store,
     S.through(console.log.bind(console, 'state')),
     viewStream.sink
