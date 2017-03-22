@@ -4,7 +4,7 @@
     "postversion": "git push && git push --tags",
     "start": "wzrd app.js:bundle.js --pushstate --path public --  -dv -t [sheetify/transform]",
     "lint": "eslint .",
-    "deps": "dependency-check package.json && dependency-check package.json --unused --entry test/*.js -i dependency-check -i eslint -i eslint-config-minlint -i tap-spec",
+    "deps": "dependency-check package.json && dependency-check package.json --unused --entry test/*.js -i dependency-check -i eslint -i eslint-config-minlint -i tap-spec -i wzrd",
     "test": "tape test/*.js | tap-spec"
   },
   "dependencies": {
@@ -26,7 +26,8 @@
     "eslint": "^3.17.0",
     "eslint-config-minlint": "^2.0.0",
     "tap-spec": "^4.1.1",
-    "tape": "^4.6.3"
+    "tape": "^4.6.3",
+    "wzrd": "^1.5.0"
   },
   "private": true
 }
